@@ -33,6 +33,7 @@ export default {
   justify-content: center;
   border-radius: 10px;
   color: white;
+  height: 230px;
 }
 
 .card-item img {
