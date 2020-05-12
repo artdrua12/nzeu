@@ -48,12 +48,11 @@ export default {};
 }
 .footer-section {
   flex: 0 1 500px;
-}
-.footer-section h4 {
   border-top: 2px solid rgb(133, 161, 185);
-  padding: 14px 0px 0 0;
+  margin: 25px 0px 0 0;
 }
-.footer-section h4:hover {
+
+.footer-section:hover {
   border-color: white;
 }
 .footer-fullWidth {

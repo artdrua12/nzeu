@@ -30,7 +30,7 @@ export default {
 <style>
 body {
   margin: 0px;
-  background: url(https://mdoc.nces.by/img/bg.png) repeat-x;
+  background: url(https://mdoc.nces.by/img/bg.png) repeat-x
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -39,8 +39,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr minmax(1200px, 1300px) 1fr;
-  grid-template-rows: 200px auto auto auto 1fr auto;
-  background: url(https://mdoc.nces.by/img/bg_header.png) 50% 0 no-repeat;
+  grid-template-rows: 200px 235px auto  auto 1fr auto;
   min-height: 100vh;
 }
 

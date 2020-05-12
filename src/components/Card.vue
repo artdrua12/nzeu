@@ -1,28 +1,44 @@
 <template>
   <div class="card">
-    <button v-for="i in 5" :key="i" class="card-item button_black">
-      <img src="https://mdoc.nces.by/img/input.png" />
-      <h2>вход</h2>
+    <button v-for="item in data" :key="item.name" class="card-item button_black">
+      <img :src="imgLink(item.img)" />
+      <h4>{{item.name}}</h4>
     </button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Card"
+  name: "Card",
+  data() {
+    return {
+      data: [
+        { name: "ВХОД", img: "input.png" },
+        { name: "РЕГИСТРАЦИЯ", img: "reg.png" },
+        { name: "О СЕРВИСЕ", img: "system.png" },
+        { name: "КОНТАКТЫ", img: "cont.png" },
+        { name: "Абоненты СМДО", img: "input.png" }
+      ]
+    };
+  },
+  methods: {
+    imgLink(name) {
+      return `https://mdoc.nces.by/img/${name}`;
+    }
+  }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-  grid-column-gap: 25px;
+  grid-column-gap: 15px;
   padding: 25px;
   border-radius: 10px;
   background-color: #07273c;
   height: auto;
+  z-index: 2;
 }
 
 .card-item {
@@ -38,7 +54,7 @@ export default {
   border: 1px solid white;
   border-radius: 10%;
 }
-.card-item h2 {
+.card-item h4 {
   margin-bottom: 0px;
 }
 

@@ -16,6 +16,7 @@ export default {};
   border-radius: 10px;
   padding:30px 0 50px 35px;
   margin-top: 30px;
+  z-index: 2;
 }
 .button_black__size {
   width: 230px;

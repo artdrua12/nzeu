@@ -1,6 +1,8 @@
 <template>
   <div class="header">
     <img src="https://mdoc.nces.by/img/logo.png" alt="logo" />
+    <img class="header-left" src="https://mdoc.nces.by/img/intro-background-img-1-1.png" alt />
+    <img class="header-right" src="https://mdoc.nces.by/img/intro-background-img-1-3.png" alt />
   </div>
 </template>
 
@@ -22,5 +24,16 @@ export default {};
 }
 .header img {
   margin-top: 35px;
+}
+.header-left {
+  position: absolute;
+  height: 570px;
+  top: 135px;
+}
+.header-right{
+  position: absolute;
+  height: 570px;
+  top: 45px;
+  right: 0px;
 }
 </style>
