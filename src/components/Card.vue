@@ -17,12 +17,12 @@ export default {
 <style scoped>
 .card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  grid-template-rows: 230px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-gap: 25px;
   padding: 25px;
   border-radius: 10px;
   background-color: #07273c;
+  height: auto;
 }
 
 .card-item {
@@ -41,11 +41,20 @@ export default {
   border: 1px solid white;
   border-radius: 10%;
 }
+.card-item h2 {
+  margin-bottom: 0px;
+}
+
+.card-item:hover {
+  background-color: #7ea232;
+}
 
 @media (max-width: 1290px) {
-  .card  {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    grid-template-rows: 170px;
+  .card {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+  .card-item {
+    height: 190px;
   }
 }
 </style>
