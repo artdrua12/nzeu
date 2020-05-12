@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <header-comp class="app-header"></header-comp>
-    <card class="app-card "></card>
-    <enter class="app-enter app_center "></enter>
+    <card class="app-card"></card>
+    <enter class="app-enter app_center"></enter>
+    <before-footer class="app-before-footer"></before-footer>
     <footer-comp class="app-footer app_center"></footer-comp>
   </div>
 </template>
@@ -11,7 +12,8 @@
 import headerComp from "./components/Header";
 import card from "./components/Card";
 import enter from "./components/Enter";
-import footerComp from "./components/Footer"
+import beforeFooter from "./components/BeforeFooter";
+import footerComp from "./components/Footer";
 
 export default {
   name: "App",
@@ -19,6 +21,7 @@ export default {
     headerComp,
     card,
     enter,
+    beforeFooter,
     footerComp
   }
 };
@@ -36,11 +39,10 @@ body {
 
   display: grid;
   grid-template-columns: 1fr minmax(1200px, 1300px) 1fr;
-  grid-template-rows: 250px auto auto auto 1fr;
-  grid-row-gap: 10px;
-  background: url(https://mdoc.nces.by/img/bg_header.png) 50% 0 no-repeat,
-    url(https://mdoc.nces.by/img/pattern_city.png) 0 100% repeat-x;
-      min-height: 100vh;
+  grid-template-rows: 200px auto auto auto 1fr auto;
+  grid-row-gap: 35px;
+  background: url(https://mdoc.nces.by/img/bg_header.png) 50% 0 no-repeat;
+  min-height: 100vh;
 }
 
 .app-header {
@@ -54,10 +56,8 @@ body {
   grid-column: -2/2;
 }
 
-.app-footer {
-  /* background-image: url(https://mdoc.nces.by/img/pattern_city.png); */
-  background-repeat: repeat-х;
-  height: 176px;
+.app-before-footer {
+   grid-column: -1/1;
 }
 
 @media (max-width: 1290px) {
