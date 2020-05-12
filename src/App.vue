@@ -65,4 +65,20 @@ body {
     grid-template-columns: 1fr minmax(230px, 720px) 1fr;
   }
 }
+/* глобальные стили */
+.button_black {
+  border-radius: 10px;
+  margin-top: 5px;
+  outline: none;
+  margin-bottom: 15px;
+  background-color: #41535f;
+  border: 1px solid #41535f;
+  border-bottom: 4px solid #010e16;
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+.button_black:hover {
+  background-color: #7ea232;
+}
 </style>

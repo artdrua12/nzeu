@@ -1,15 +1,15 @@
 <template>
   <div class="card">
-    <div v-for="i in 5" :key="i" class="card-item">
+    <button v-for="i in 5" :key="i" class="card-item button_black">
       <img src="https://mdoc.nces.by/img/input.png" />
       <h2>вход</h2>
-    </div>
+    </button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld"
+  name: "Card"
 };
 </script>
 
@@ -17,8 +17,8 @@ export default {
 <style scoped>
 .card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-column-gap: 25px;
   padding: 25px;
   border-radius: 10px;
   background-color: #07273c;
@@ -26,13 +26,10 @@ export default {
 }
 
 .card-item {
-  background-color: #41535f;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  color: white;
   height: 230px;
 }
 
@@ -43,10 +40,6 @@ export default {
 }
 .card-item h2 {
   margin-bottom: 0px;
-}
-
-.card-item:hover {
-  background-color: #7ea232;
 }
 
 @media (max-width: 1290px) {
