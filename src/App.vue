@@ -3,8 +3,8 @@
     <header-comp class="app-header"></header-comp>
     <card class="app-card"></card>
     <enter class="app-enter app_center"></enter>
-    <before-footer class="app-before-footer"></before-footer>
-    <footer-comp class="app-footer app_center"></footer-comp>
+    <before-footer class="app-fullWidth"></before-footer>
+    <footer-comp class="app-fullWidth"></footer-comp>
   </div>
 </template>
 
@@ -40,7 +40,6 @@ body {
   display: grid;
   grid-template-columns: 1fr minmax(1200px, 1300px) 1fr;
   grid-template-rows: 200px auto auto auto 1fr auto;
-  grid-row-gap: 35px;
   background: url(https://mdoc.nces.by/img/bg_header.png) 50% 0 no-repeat;
   min-height: 100vh;
 }
@@ -55,9 +54,8 @@ body {
 .app_center {
   grid-column: -2/2;
 }
-
-.app-before-footer {
-   grid-column: -1/1;
+.app-fullWidth {
+  grid-column: -1/1;
 }
 
 @media (max-width: 1290px) {
