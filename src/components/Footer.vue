@@ -1,18 +1,15 @@
 <template>
   <div class="footer">
     <div class="footer-section">
-      <h4>Наш адрес:</h4>
-      <p>
-        info@nces.by
-        <br />220004 г. Минск,
-        <br />Республиканское унитарное
-        <br />предприятие "Национальный центр
-        <br />электронных услуг"
-        <br />ул. Раковская, д.14
-      </p>
+      <h4 v-text="$ml.with('VueJS').get('footerAdress')"></h4>
+      <p>info@nces.by</p>
+      <p v-text="$ml.with('VueJS').get('footerCity')"></p>
+      <p v-text="$ml.with('VueJS').get('footerEnterprise')"></p>
+      <p v-text="$ml.with('VueJS').get('footerNational')"></p>
+      <p v-text="$ml.with('VueJS').get('footerStreet')"></p>
     </div>
     <div class="footer-section">
-      <h4>Контакты:</h4>
+      <h4 v-text="$ml.with('VueJS').get('footerContacts')"></h4>
       <p>
         Тел.: +375 17 311 30 00
         <br />Факс: +375 17 311 30 06
@@ -20,7 +17,7 @@
         <br />www.nces.by
       </p>
     </div>
-    <div
+    <div v-text="$ml.with('VueJS').get('footerCopy')"
       class="footer-bottom footer-fullWidth"
     >© Минск 2020 mDoc - Национальный центр электронных услуг</div>
   </div>
@@ -50,6 +47,9 @@ export default {};
   flex: 0 1 500px;
   border-top: 2px solid rgb(133, 161, 185);
   margin: 25px 0px 0 0;
+}
+.footer-section p{
+  margin: 0px;
 }
 
 .footer-section:hover {

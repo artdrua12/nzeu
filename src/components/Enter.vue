@@ -1,11 +1,9 @@
 <template>
   <div class="enter">
-    <h2>Вход осуществляется с использованием мобильной ЭЦП</h2>
-    <button class="button_black button_black__size">Войти в аккаунт</button>
-    <p>Зарегистрироваться</p>
-
+    <h2 v-text="$ml.with('VueJS').get('enterTitle')"></h2>
+    <button v-text="$ml.with('VueJS').get('enterBtn')" class="button_black button_black__size"></button>
+    <p v-text="$ml.with('VueJS').get('enterMsg')"></p>
     <button v-for="lang in $ml.list" :key="lang" @click="$ml.change(lang)" v-text="lang" />
-    <h1 v-text="$ml.with('VueJS').get('title')" />
   </div>
 </template>
 
