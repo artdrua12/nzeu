@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <button v-for="item in data" :key="item.name" class="card-item button_black">
+    <button v-for="item in $ml.get('cardsData')" :key="item.name" class="card-item button_black">
       <img :src="require(`../assets/${item.img}`)" />
       <h4>{{item.name}}</h4>
     </button>
@@ -8,11 +8,13 @@
 </template>
 
 <script>
+import { MLBuilder } from "vue-multilanguage";
+
 export default {
   name: "Card",
   data() {
     return {
-      data: [
+      data2: [
         { name: "ВХОД", img: "input.png" },
         { name: "РЕГИСТРАЦИЯ", img: "reg.png" },
         { name: "О СЕРВИСЕ", img: "system.png" },
@@ -20,6 +22,11 @@ export default {
         { name: "Абоненты СМДО", img: "input.png" }
       ]
     };
+  },
+  computed: {
+    mlcardsData() {
+      return new MLBuilder("cardData");
+    }
   }
 };
 </script>

@@ -8,6 +8,14 @@ export default new MLCreate({
     save: process.env.NODE_ENV === 'production',
     languages: [
         new MLanguage('ru').create({
+            cardData: [
+                { name: "ВХОД", img: "input.png" },
+                { name: "РЕГИСТРАЦИЯ", img: "reg.png" },
+                { name: "О СЕРВИСЕ", img: "system.png" },
+                { name: "КОНТАКТЫ", img: "cont.png" },
+                { name: "Абоненты СМДО", img: "input.png" }
+            ],
+
             enterTitle: 'Вход осуществляется с использованием мобильной ЭЦП',
             enterBtn: 'Войти в аккаунт',
             enterMsg: 'зарегистрироваться',
@@ -22,6 +30,14 @@ export default new MLCreate({
         }),
 
         new MLanguage('en').create({
+            cardData: [
+                { name: "ENTER", img: "input.png" },
+                { name: "REGISTRATION", img: "reg.png" },
+                { name: "ABOUT THE SERVICE", img: "system.png" },
+                { name: "CONTACTS", img: "cont.png" },
+                { name: "SMDO subscribers", img: "input.png" }
+            ],
+
             enterTitle: 'You can log in using a mobile digital signature',
             enterBtn: 'Log in to your account',
             enterMsg: 'sign up',
