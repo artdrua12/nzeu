@@ -20,11 +20,6 @@ export default {
         { name: "Абоненты СМДО", img: "input.png" }
       ]
     };
-  },
-  methods: {
-    imgLink(name) {
-      return require(`../assets/${name}`);
-    }
   }
 };
 </script>
