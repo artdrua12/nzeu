@@ -38,7 +38,7 @@ export default {};
 
   min-height: 300px;
   background-color: #1c609d;
-  background-image: url(https://mdoc.nces.by/img/bg_footer.png);
+  background-image: url(../assets/bg_footer.png);
   background-repeat: repeat-х;
 
   font-size: 18px;

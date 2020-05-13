@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <img src="https://mdoc.nces.by/img/logo.png" alt="logo" />
-    <img class="header-left" src="https://mdoc.nces.by/img/intro-background-img-1-1.png" alt />
-    <img class="header-right" src="https://mdoc.nces.by/img/intro-background-img-1-3.png" alt />
+    <img src="../assets/logo.png" alt="logo" />
+    <img class="header-left" src="../assets/intro-background-img-1-1.png" alt='leftImage' />
+    <img class="header-right" src="../assets/intro-background-img-1-3.png" alt='rightImage' />
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {};
 .header {
   display: grid;
   justify-content: center;
-  background: url(https://mdoc.nces.by/img/bg_header.png) 50% 0 no-repeat,
+  background: url(../assets/bg_header.png) 50% 0 no-repeat,
     linear-gradient(
       to right,
       rgba(1, 112, 128, 1) 0,
@@ -30,7 +30,7 @@ export default {};
   height: 570px;
   top: 135px;
 }
-.header-right{
+.header-right {
   position: absolute;
   height: 570px;
   top: 45px;

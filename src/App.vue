@@ -30,7 +30,7 @@ export default {
 <style>
 body {
   margin: 0px;
-  background: url(https://mdoc.nces.by/img/bg.png) repeat-x
+  background: url(assets/bg.png) repeat-x
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

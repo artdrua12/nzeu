@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <button v-for="item in data" :key="item.name" class="card-item button_black">
-      <img :src="imgLink(item.img)" />
+      <img :src="require(`../assets/${item.img}`)" />
       <h4>{{item.name}}</h4>
     </button>
   </div>
@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     imgLink(name) {
-      return `https://mdoc.nces.by/img/${name}`;
+      return require(`../assets/${name}`);
     }
   }
 };
