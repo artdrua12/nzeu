@@ -11,7 +11,6 @@
 import { MLBuilder } from "vue-multilanguage";
 
 export default {
-  name: "Card",
   data() {
     return {
       data2: [

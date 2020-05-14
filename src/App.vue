@@ -2,7 +2,8 @@
   <div id="app">
     <header-comp class="app-header"></header-comp>
     <card class="app-card"></card>
-    <enter class="app-enter app_center"></enter>
+    <router-view class="app-enter app_center"></router-view>
+    <!-- <enter class="app-enter app_center"></enter> -->
     <before-footer class="app-fullWidth"></before-footer>
     <footer-comp class="app-fullWidth"></footer-comp>
   </div>
@@ -11,7 +12,6 @@
 <script>
 import headerComp from "./components/Header";
 import card from "./components/Card";
-import enter from "./components/Enter";
 import beforeFooter from "./components/BeforeFooter";
 import footerComp from "./components/Footer";
 
@@ -20,7 +20,6 @@ export default {
   components: {
     headerComp,
     card,
-    enter,
     beforeFooter,
     footerComp
   }
@@ -30,7 +29,7 @@ export default {
 <style>
 body {
   margin: 0px;
-  background: url(assets/bg.png) repeat-x
+  background: url(assets/bg.png) repeat-x;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -39,7 +38,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr minmax(1200px, 1300px) 1fr;
-  grid-template-rows: 200px 235px auto  auto 1fr auto;
+  grid-template-rows: 200px 235px auto auto 1fr auto;
   min-height: 100vh;
 }
 
