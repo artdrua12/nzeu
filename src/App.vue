@@ -64,9 +64,7 @@ body {
 /* глобальные стили */
 .button_black {
   border-radius: 10px;
-  margin-top: 5px;
   outline: none;
-  margin-bottom: 15px;
   background-color: #41535f;
   border: 1px solid #41535f;
   border-bottom: 4px solid #010e16;
@@ -74,7 +72,16 @@ body {
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
 }
+.disable {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
 .button_black:hover {
   background-color: #7ea232;
+}
+.link:hover {
+  color: #7ea232;
+  cursor: pointer;
 }
 </style>

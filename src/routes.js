@@ -1,6 +1,6 @@
 import VueRouter from 'vue-router'
 import Enter from './components/Enter'
-import Test from './components/Test'
+import Registration from './components/Registration'
 
 export default new VueRouter({
     routes: [
@@ -9,8 +9,9 @@ export default new VueRouter({
             component: Enter
         },
         {
-            path: '/test',
-            component: Test
+            path: '/Registration',
+            component: Registration
         }
-    ]
+    ],
+    mode: 'history'
 })

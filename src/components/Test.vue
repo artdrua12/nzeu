@@ -1,5 +1,8 @@
 <template>
-  <h1>Test WORK</h1>
+  <div>
+    <h1>Test WORK</h1>
+    <router-link tag="p" to="/" v-text="$ml.with('VueJS').get('enterMsg')"></router-link>
+  </div>
 </template>
 
 <script>

@@ -6,7 +6,7 @@
       class="button_black button_black__size"
       @click="onclick"
     ></button>
-    <p v-text="$ml.with('VueJS').get('enterMsg')"></p>
+    <router-link tag="p" to="/registration" v-text="$ml.with('VueJS').get('enterMsg')"></router-link>
   </div>
 </template>
 
@@ -35,7 +35,8 @@ export default {
   width: 230px;
   height: 50px;
 }
-.enter p:hover{
+.enter p:hover {
   color: #7ea232;
+  outline: none;
 }
 </style>

@@ -20,6 +20,11 @@ export default new MLCreate({
             enterBtn: 'Войти в аккаунт',
             enterMsg: 'зарегистрироваться',
 
+            registrationTitle:'Регистрация осуществляется с использованием ',
+            registrationTitleLink:'мобильной ЭЦП',
+            registrationCheckbox:' Я согласен с условиями ',
+            registrationCheckboxLink:' Пользовательского соглашения',
+
             footerAdress: 'Наш адрес:',
             footerContacts: 'Контакты',
             footerCity: '220004 г. Минск,',
@@ -41,6 +46,11 @@ export default new MLCreate({
             enterTitle: 'You can log in using a mobile digital signature',
             enterBtn: 'Log in to your account',
             enterMsg: 'sign up',
+
+            registrationTitle:'Registration is performed using ',
+            registrationTitleLink:'a mobile digital signature',
+            registrationCheckbox:' I agree to the terms',
+            registrationCheckboxLink:' User agreement',
 
             footerAdress: 'Our address:',
             footerContacts: 'Contacts',
