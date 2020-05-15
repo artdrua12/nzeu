@@ -9,21 +9,21 @@ export default new MLCreate({
     languages: [
         new MLanguage('ru').create({
             cardData: [
-                { name: "ВХОД", img: "input.png" },
-                { name: "РЕГИСТРАЦИЯ", img: "reg.png" },
-                { name: "О СЕРВИСЕ", img: "system.png" },
-                { name: "КОНТАКТЫ", img: "cont.png" },
-                { name: "Абоненты СМДО", img: "input.png" }
+                { name: "ВХОД", img: "input.png", to: '/' },
+                { name: "РЕГИСТРАЦИЯ", img: "reg.png", to: 'registration' },
+                { name: "О СЕРВИСЕ", img: "system.png", to: 'service' },
+                { name: "КОНТАКТЫ", img: "cont.png", to: 'contacts' },
+                { name: "Абоненты СМДО", img: "input.png", to: 'smdo' }
             ],
 
             enterTitle: 'Вход осуществляется с использованием мобильной ЭЦП',
             enterBtn: 'Войти в аккаунт',
             enterMsg: 'зарегистрироваться',
 
-            registrationTitle:'Регистрация осуществляется с использованием ',
-            registrationTitleLink:'мобильной ЭЦП',
-            registrationCheckbox:' Я согласен с условиями ',
-            registrationCheckboxLink:' Пользовательского соглашения',
+            registrationTitle: 'Регистрация осуществляется с использованием ',
+            registrationTitleLink: 'мобильной ЭЦП',
+            registrationCheckbox: ' Я согласен с условиями ',
+            registrationCheckboxLink: ' Пользовательского соглашения',
 
             footerAdress: 'Наш адрес:',
             footerContacts: 'Контакты',
@@ -36,21 +36,21 @@ export default new MLCreate({
 
         new MLanguage('en').create({
             cardData: [
-                { name: "ENTER", img: "input.png" },
-                { name: "REGISTRATION", img: "reg.png" },
-                { name: "ABOUT THE SERVICE", img: "system.png" },
-                { name: "CONTACTS", img: "cont.png" },
-                { name: "SMDO subscribers", img: "input.png" }
+                { name: "ENTER", img: "input.png", to: '/' },
+                { name: "REGISTRATION", img: "reg.png", to: 'registration' },
+                { name: "ABOUT THE SERVICE", img: "system.png", to: 'service' },
+                { name: "CONTACTS", img: "cont.png", to: 'contacts' },
+                { name: "SMDO subscribers", img: "input.png", to: 'smdo' }
             ],
 
             enterTitle: 'You can log in using a mobile digital signature',
             enterBtn: 'Log in to your account',
             enterMsg: 'sign up',
 
-            registrationTitle:'Registration is performed using ',
-            registrationTitleLink:'a mobile digital signature',
-            registrationCheckbox:' I agree to the terms',
-            registrationCheckboxLink:' User agreement',
+            registrationTitle: 'Registration is performed using ',
+            registrationTitleLink: 'a mobile digital signature',
+            registrationCheckbox: ' I agree to the terms',
+            registrationCheckboxLink: ' User agreement',
 
             footerAdress: 'Our address:',
             footerContacts: 'Contacts',

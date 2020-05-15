@@ -1,9 +1,17 @@
 <template>
   <div class="card">
-    <button v-for="item in $ml.get('cardsData')" :key="item.name" class="card-item button_black">
+    <router-link
+      tag="button"
+      v-for="item in $ml.get('cardsData')"
+      :key="item.name"
+      :to="item.to"
+      active-class="active"
+      exact
+      class="card-item button_black"
+    >
       <img :src="require(`../assets/${item.img}`)" />
       <h4>{{item.name}}</h4>
-    </button>
+    </router-link>
   </div>
 </template>
 
@@ -34,7 +42,7 @@ export default {
 .card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-  grid-column-gap: 15px;
+  grid-gap: 15px;
   padding: 25px;
   border-radius: 10px;
   background-color: #07273c;

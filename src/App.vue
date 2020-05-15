@@ -77,7 +77,8 @@ body {
   pointer-events: none;
 }
 
-.button_black:hover {
+.button_black:hover,
+.active {
   background-color: #7ea232;
 }
 .link:hover {
