@@ -21,13 +21,6 @@ import { MLBuilder } from "vue-multilanguage";
 export default {
   data() {
     return {
-      data2: [
-        { name: "ВХОД", img: "input.png" },
-        { name: "РЕГИСТРАЦИЯ", img: "reg.png" },
-        { name: "О СЕРВИСЕ", img: "system.png" },
-        { name: "КОНТАКТЫ", img: "cont.png" },
-        { name: "Абоненты СМДО", img: "input.png" }
-      ]
     };
   },
   computed: {

@@ -23,10 +23,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .enter {
+  display: grid;
   background-color: #fff;
   border-radius: 10px;
+  grid-row-gap: 20px;
   padding: 30px 0 50px 35px;
   margin-top: 30px;
   z-index: 2;

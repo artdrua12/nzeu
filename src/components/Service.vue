@@ -1,10 +1,13 @@
 <template>
-  <div class="enter">
-    <h2></h2>
+  <div class="service">
+    <h2 class="app-fullWidth" v-text="$ml.with('VueJS').get('serviceTitle')"></h2>
+    <div class="service-item" v-for="item in $ml.get('serviceData')" :key="item.name">
+      <img :src="require(`../assets/${item.img}`)" />
+      <h4>{{item.name}}</h4>
+    </div>
     <button
       v-text="$ml.with('VueJS').get('enterBtn')"
-      class="button_black button_black__size"
-      :class="{'disable': !this.checked}"
+      class="button_black button_black__size app-fullWidth"
       @click="onclick"
     ></button>
   </div>
@@ -29,32 +32,34 @@ export default {
 };
 </script>
 
-<style>
-.enter {
+<style scoped>
+.service {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
+  padding: 25px;
+  border-radius: 10px;
   background-color: #fff;
   border-radius: 10px;
-  padding: 30px 0 50px 35px;
   margin-top: 30px;
   z-index: 2;
 }
+.service-item {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+.service-item img {
+  width: 86px;
+}
+
 .button_black__size {
   width: 230px;
   height: 50px;
-  border-radius: 10px;
-  font-size: 16px;
-  border: 1px solid #41535f;
-  border-bottom: 4px solid #010e16;
+  justify-self: center;
 }
-.enter-link {
-  color: #41535f;
-  text-decoration: none;
-}
-.enter-checkbox {
-  transform: scale(2);
-  cursor: pointer;
-  margin: 0 10px 0 10px;
+h2,
+h4 {
+  text-align: center;
 }
 </style>

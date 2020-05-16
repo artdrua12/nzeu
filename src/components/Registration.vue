@@ -1,5 +1,5 @@
 <template>
-  <div class="enter">
+  <div class="registration">
     <h2>
       <span v-text="$ml.with('VueJS').get('registrationTitle')"></span>
       <a
@@ -9,9 +9,9 @@
       ></a>
     </h2>
     <label>
-      <input class="enter-checkbox" type="checkbox" v-model="checked" />
+      <input class="registration-checkbox" type="checkbox" v-model="checked" />
       <span v-text="$ml.with('VueJS').get('registrationCheckbox')"></span>
-      <span v-text="$ml.with('VueJS').get('registrationCheckboxLink')" class="link enter-link"></span>
+      <span v-text="$ml.with('VueJS').get('registrationCheckboxLink')" class="link registration-link"></span>
     </label>
     <button
       v-text="$ml.with('VueJS').get('enterBtn')"
@@ -42,10 +42,10 @@ export default {
 </script>
 
 <style>
-.enter {
+.registration {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 25px;
+  grid-row-gap: 20px;
   background-color: #fff;
   border-radius: 10px;
   padding: 30px 0 50px 35px;
@@ -55,16 +55,12 @@ export default {
 .button_black__size {
   width: 230px;
   height: 50px;
-  border-radius: 10px;
-  font-size: 16px;
-  border: 1px solid #41535f;
-  border-bottom: 4px solid #010e16;
 }
-.enter-link {
+.registration-link {
   color: #41535f;
   text-decoration: none;
 }
-.enter-checkbox {
+.registration-checkbox {
   transform: scale(2);
   cursor: pointer;
   margin: 0 10px 0 10px;
