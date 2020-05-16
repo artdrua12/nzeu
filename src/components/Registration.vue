@@ -4,7 +4,7 @@
       <span v-text="$ml.with('VueJS').get('registrationTitle')"></span>
       <a
         v-text="$ml.with('VueJS').get('registrationTitleLink')"
-        class="link enter-link"
+        class="link registration-link"
         href="https://nces.by/pki/service/mobile-ecp/"
       ></a>
     </h2>

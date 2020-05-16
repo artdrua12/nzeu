@@ -1,9 +1,9 @@
 <template>
   <div class="service">
-    <h2 class="app-fullWidth" v-text="$ml.with('VueJS').get('serviceTitle')"></h2>
+    <p class="app-fullWidth service-title" v-text="$ml.with('VueJS').get('serviceTitle')"></p>
     <div class="service-item" v-for="item in $ml.get('serviceData')" :key="item.name">
       <img :src="require(`../assets/${item.img}`)" />
-      <h4>{{item.name}}</h4>
+      <p class="service-text">{{item.name}}</p>
     </div>
     <button
       v-text="$ml.with('VueJS').get('enterBtn')"
@@ -36,21 +36,22 @@ export default {
 .service {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 15px;
+  grid-gap: 30px;
   padding: 25px;
   border-radius: 10px;
   background-color: #fff;
-  border-radius: 10px;
   margin-top: 30px;
   z-index: 2;
+  text-align: center;
 }
 .service-item {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .service-item img {
-  width: 86px;
+  width: auto;
+  height: 60px;
 }
 
 .button_black__size {
@@ -58,8 +59,18 @@ export default {
   height: 50px;
   justify-self: center;
 }
-h2,
-h4 {
-  text-align: center;
+.service-title {
+  font-size: 20px;
+  min-height: 70px;
+}
+.service-text {
+  font-size: 17px;
+  min-height: 125px;
+}
+
+@media (max-width: 600px) {
+.service {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
 }
 </style>
