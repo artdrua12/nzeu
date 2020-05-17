@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .registration {
   display: grid;
   grid-template-columns: 1fr;
