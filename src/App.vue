@@ -3,7 +3,6 @@
     <header-comp class="app-header"></header-comp>
     <card class="app-card"></card>
     <router-view class="app-enter app_center"></router-view>
-    <!-- <enter class="app-enter app_center"></enter> -->
     <before-footer class="app-fullWidth"></before-footer>
     <footer-comp class="app-fullWidth"></footer-comp>
   </div>

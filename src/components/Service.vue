@@ -36,7 +36,8 @@ export default {
 .service {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
   padding: 25px;
   border-radius: 10px;
   background-color: #fff;
@@ -69,8 +70,10 @@ export default {
 }
 
 @media (max-width: 600px) {
-.service {
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-}
+  .service {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
 }
 </style>

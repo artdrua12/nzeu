@@ -17,7 +17,13 @@
     <el-divider></el-divider>
 
     <ul class="smdo-content">
-      <li v-for="(item, i) in paginationData" :key="i">{{item}}</li>
+      <router-link
+        tag="li"
+        v-for="(item, i) in paginationData"
+        :key="i"
+        :to="'/abonent/'+ (++i)"
+        class="link"
+      >{{item}}</router-link>
     </ul>
 
     <el-divider class="app-fullWidth"></el-divider>
@@ -133,14 +139,16 @@ export default {
 .smdo-content {
   height: 290px;
 }
-.el-divider--horizontal{
+.smdo-input {
+  width: 250px;
+}
+.el-divider--horizontal {
   margin: 20px 0px;
 }
-.el-divider--vertical{
+.el-divider--vertical {
   height: 2em;
 }
-.el-input{
+.el-input {
   margin-right: 10px;
 }
-
 </style>

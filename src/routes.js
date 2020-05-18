@@ -3,6 +3,8 @@ import Enter from './components/Enter'
 import Registration from './components/Registration'
 import Service from './components/Service'
 import Smdo from './components/Smdo'
+import Abonent from './components/Abonent'
+import AbonentFull from './components/AbonentFull'
 
 export default new VueRouter({
     routes: [
@@ -21,6 +23,17 @@ export default new VueRouter({
         {
             path: '/smdo',
             component: Smdo
+        },
+        {
+            path: '/abonent/:id',
+            component: Abonent,
+            children:[
+                {
+                    path: 'full',
+                    component: AbonentFull,
+                    name: 'abonentFull'
+                },
+            ]
         }
     ],
     mode: 'history'

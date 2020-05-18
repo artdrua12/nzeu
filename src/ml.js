@@ -10,10 +10,10 @@ export default new MLCreate({
         new MLanguage('ru').create({
             cardData: [
                 { name: "ВХОД", img: "input.png", to: '/' },
-                { name: "РЕГИСТРАЦИЯ", img: "reg.png", to: 'registration' },
-                { name: "О СЕРВИСЕ", img: "system.png", to: 'service' },
-                { name: "КОНТАКТЫ", img: "cont.png", to: 'contacts' },
-                { name: "Абоненты СМДО", img: "input.png", to: 'smdo' }
+                { name: "РЕГИСТРАЦИЯ", img: "reg.png", to: '/registration' },
+                { name: "О СЕРВИСЕ", img: "system.png", to: '/service' },
+                { name: "КОНТАКТЫ", img: "cont.png", to: '/contacts' },
+                { name: "Абоненты СМДО", img: "input.png", to: '/smdo' }
             ],
 
             enterTitle: 'Вход осуществляется с использованием мобильной ЭЦП',
@@ -50,10 +50,10 @@ export default new MLCreate({
         new MLanguage('en').create({
             cardData: [
                 { name: "ENTER", img: "input.png", to: '/' },
-                { name: "REGISTRATION", img: "reg.png", to: 'registration' },
-                { name: "ABOUT THE SERVICE", img: "system.png", to: 'service' },
-                { name: "CONTACTS", img: "cont.png", to: 'contacts' },
-                { name: "SMDO subscribers", img: "input.png", to: 'smdo' }
+                { name: "REGISTRATION", img: "reg.png", to: '/registration' },
+                { name: "ABOUT THE SERVICE", img: "system.png", to: '/service' },
+                { name: "CONTACTS", img: "cont.png", to: '/contacts' },
+                { name: "SMDO subscribers", img: "input.png", to: '/smdo' }
             ],
 
             enterTitle: 'You can log in using a mobile digital signature',
